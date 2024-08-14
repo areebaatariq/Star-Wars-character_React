@@ -1,0 +1,99 @@
+body {
+  /* margin: 0;
+  padding: 0;
+  background-image: url('/images/war-2721538_1280.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;*/
+  background-color: antiquewhite;
+}
+
+
+.App {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  color: hsl(0, 0%, 0%); /* Initial color */
+  transition: color 0.5s ease; /* Apply transition */
+}
+
+h1:hover {
+  color: red; /* Color changes on hover */
+}
+
+h1 {
+  position: relative; /* Required for the left/right animation */
+  animation: move 5s linear infinite; /* 5-second animation, moves continuously */
+}
+
+
+@keyframes move {
+  0% {
+    left: 0; /* Start at the original position */
+  }
+  50% {
+    left: 100px; /* Move 100px to the right */
+  }
+  100% {
+    left: 0; /* Return to the starting position */
+  }
+}
+
+
+.filters {
+  margin-bottom: 20px;
+}
+
+.filters input {
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.filters select {
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.character-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.character-card {
+  width: calc(15% - 16px);
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  color: rgb(0, 0, 0); /* Black */
+
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Garamond';
+
+}
+
+.character-card img {
+  width: 100%;
+  border-radius: 8px;
+  height: 80%;
+}
+
+.character-card h2 {
+  margin: 10px 0;
+}
+
+.ReactModal__Overlay {
+  z-index: 1000;
+}
+
+.ReactModal__Content {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px;
+  background: #fff;
+}
